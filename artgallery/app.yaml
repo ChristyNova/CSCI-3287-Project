@@ -1,0 +1,21 @@
+application: arttemp
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  script: main.php
+- url: /available.php
+  script: available.php
+- url: /purchased.php
+  script: purchased.php
+- url: /availDetail.php
+  script: availDetail.php
+- url: /purchDetail.php
+  script: purchDetail.php
